@@ -13,7 +13,7 @@ import com.trazoft.Bascula.repositories.ProductRepository;
 @Configuration
 public class Database {
     // Logger
-    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(Database.class);
+    private static final Logger logger = LoggerFactory.getLogger(Database.class);
     @Bean
     CommandLineRunner initDatabase(ProductRepository productRepository){
         return new CommandLineRunner() {
