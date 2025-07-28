@@ -2,12 +2,9 @@ package com.trazoft.Bascula.database;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.time.LocalDateTime;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import com.trazoft.Bascula.models.Product;
 import com.trazoft.Bascula.repositories.ProductRepository;
 
 @Configuration

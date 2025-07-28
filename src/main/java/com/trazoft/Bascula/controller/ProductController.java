@@ -9,16 +9,13 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
-
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
-
 import com.trazoft.Bascula.dto.ProductDTO;
 import com.trazoft.Bascula.models.Product;
 import com.trazoft.Bascula.models.ResponseObject;
 import com.trazoft.Bascula.repositories.ProductRepository;
-
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
