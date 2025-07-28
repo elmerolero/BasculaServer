@@ -19,10 +19,10 @@ public class Database {
         return new CommandLineRunner() {
             @Override
             public void run(String... args) throws Exception {
-                Product productA = new Product("MacBook Pro 16", "Apple computer", LocalDateTime.now(), LocalDateTime.now());
-                Product productB = new Product("iPhone 13", "Apple telephone", LocalDateTime.now(), LocalDateTime.now());
-                logger.info("Insert data: " + productRepository.save(productA));
-                logger.info("Inser data: " + productRepository.save(productB));
+                //Product productA = new Product("MacBook Pro 16", "Apple computer", LocalDateTime.now(), LocalDateTime.now(), true);
+                //Product productB = new Product("iPhone 13", "Apple telephone", LocalDateTime.now(), LocalDateTime.now(), true);
+                //logger.info("Insert data: " + productRepository.save(productA));
+                //logger.info("Inser data: " + productRepository.save(productB));
             }
         };
     }
