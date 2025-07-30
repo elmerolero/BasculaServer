@@ -27,8 +27,10 @@ public class ProductController {
     private ProductRepository repository;
 
     @GetMapping("/")
-    List<Product> getAll() {
-        return repository.findAll();
+    private ResponseEntity<ResponseObject> getAll() {
+        return ResponseEntity.status(HttpStatus.OK).body(
+            new ResponseObject(true, "", repository.findAll())
+        );
     }
     
     @GetMapping("/{id}")

@@ -1,6 +1,7 @@
 package com.trazoft.Bascula.models;
 
 import java.time.LocalDateTime;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -151,6 +152,22 @@ public class WeightMachine {
 
     public boolean isAvailable() {
         return available;
+    }
+
+    public void setCreationDate(LocalDateTime creationDate){
+        this.creationDate = creationDate;
+    }
+
+    public LocalDateTime getCreationDate(){
+        return creationDate;
+    }
+
+    public void setLastUpdateDate(LocalDateTime lastUpdateDate){
+        this.lastUpdateDate = lastUpdateDate;
+    }
+
+    public LocalDateTime getLastUpdateDate(){
+        return lastUpdateDate;
     }
 
     public void setAvailable(boolean available) {
