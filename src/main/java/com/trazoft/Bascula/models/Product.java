@@ -24,7 +24,7 @@ public class Product {
         generator = "product_sequence"
     )
     private Long id;
-    @Column(nullable = false, unique = true, length = 300)
+    @Column(nullable = false, unique = true, length = 255)
     private String name;
     @Column(nullable = false)
     private String description;
