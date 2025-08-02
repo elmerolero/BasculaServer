@@ -40,14 +40,12 @@ public class WeightMachine {
     private boolean flippedText;
     @Column(nullable = false)
     private String ipAddress;
-    
     @Column(nullable = false)
     private LocalDateTime creationDate;
     @Column(nullable = false)
     private LocalDateTime lastUpdateDate;
     @Column(nullable = false)
     private boolean available;
-
     @ManyToOne(cascade = CascadeType.ALL)
     private Parity parity;
 
